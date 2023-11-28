@@ -1,0 +1,269 @@
+@media (min-width: 1440px)
+    .for768, .burger
+        display: none
+@media (max-width: 1440px)
+    .for1440
+        display: none
+@media (max-width: 1440px)
+    @keyframes fade
+        0%
+            opacity: 10%
+        100%
+            opacity: 100%
+    .container
+        width: 768px
+    .container.for640
+        &_active
+            width: 640px
+        header
+            position: relative
+            nav
+                margin-right: 0
+            .header_container
+                width: 768px
+            .header_container.for640
+                &_active
+                    width: 640px
+            .burger
+                margin-left: 40px
+                margin-right: 0
+                transition: 2s all
+            .menu
+                position: fixed
+                display: inline-flex
+                flex-direction: column
+                justify-content: flex-start
+                right: 0
+                top: -570px
+                opacity: 0%
+                width: 332px
+                height: 570px
+                padding: 29px 20px
+                background: #000
+                z-index: 3
+                transition: 2s all
+                ul
+                    display: inline-flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    gap: 30px
+                .for768, .for640_active
+                    height: 32px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    margin-bottom: 37px
+                    .close
+                        margin-left: 38px
+                &_active
+                    width: 332px
+                    height: 570px
+                    opacity: 100%
+                    z-index: 3
+                    top: 0
+                    transition: 2s all
+        .about
+            height: 862px
+            &_text
+                width: 728px
+            &_text.for640
+                &_active
+                    width: 640px
+            &_images.for768
+                margin: 20px 0px
+                display: grid
+                grid-template-columns: 1fr 450px 1fr
+                gap: 58px
+                align-items: center
+                padding-bottom: 40px
+                height: 601px
+            &_images_for768
+                width: 450px
+            &_pagination_for1440
+                display: none
+            &_pagination
+                width: 120px
+                display: flex
+                justify-content: space-around
+                padding-top: 20px
+                padding-bottom: 0
+                margin: 0 auto
+            .about_image
+                width: 450px
+                height: 560px
+                position: relative
+            img
+                position: absolute
+                top: 0
+                left: 0
+            img[alt='about_1']
+                z-index: 5
+            img[alt='about_2']
+                z-index: 4
+            img[alt='about_3']
+                z-index: 3
+            img[alt='about_4']
+                z-index: 2
+            img[alt='about_5']
+                z-index: 1
+            img.animation
+                animation: fade 3s
+            .arrowdisabled
+                cursor: auto
+            .arrownotdisabled
+                cursor: pointer
+    .favorites
+        height: 2629px
+        .inputs.for640
+            &_active
+                width: 640px
+                height: 24px
+                flex-shrink: 0
+                display: inline-flex
+                gap: 45px
+        .favorites_items_container
+            position: relative
+        .favorites_items
+            display: grid
+            padding-left: 69px
+            grid-template-columns: 590px
+            width: 768px
+            grid-row-gap: 40px
+            padding-bottom: 40px
+            position: absolute
+        .favorites_items.for640
+            &_active
+                display: grid
+                padding-left: 5px
+                grid-template-columns: 590px
+                width: 640px
+                grid-row-gap: 40px
+                padding-bottom: 40px
+                position: absolute
+        .spring.for640
+            display: none
+        .summer.for640
+            display: none
+        .autumn.for640
+            display: none
+    .coffeShop
+        height: 1481px
+        .coffeShop_description
+            width: 728px
+            letter-spacing: 1.9px
+        .coffeShop_description.for640
+            &_active
+                width: 600px
+        .coffeShop_menu
+            display: grid
+            grid-template-columns: 1fr
+            grid-row-gap: 40px
+            &_list_drinks
+                width: 438px
+            &_list_food
+                width: 482px
+                padding-left: 246px
+            &_list_food.for640
+                &_active
+                    width: 482px
+                    padding-left: 125px
+    .contacts
+        height: 1055px
+        padding: 20px 20px 40px 0px
+        &_title
+            padding-left: 20px
+        &_info_text.for640
+            &_active
+                margin: 0 auto
+                width: 503px
+                height: 380px
+                display: flex
+                justify-content: center
+                align-items: flex-start
+                flex-direction: column
+                gap: 40px
+        &_info_map.for640
+            &_active
+                img
+                    width: 640px
+                    height: 414px
+        &_info
+            display: grid
+            grid-template-columns: 1fr
+            gap: 100px
+            padding-left: 10px
+            &_map
+                padding-left: 10px
+    .libraryCard
+        height: 857px
+        &_card
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 20px
+            padding-left: 10px
+            &_get
+                width: 600px
+                height: 223px
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 40px
+                p
+                    width: 600px
+                    text-align: center
+                    padding-bottom: 0
+                h5
+                    padding-bottom: 0
+
+    footer
+        .footer_first
+            height: 140px
+            padding: 18.5px
+            &_items1
+                display: flex
+                justify-content: center
+                align-items: flex-start
+                gap: 353px
+                flex-shrink: 0
+                padding-bottom: 10px
+            &_items1.for640
+                &_active
+                    display: flex
+                    justify-content: center
+                    align-items: flex-start
+                    gap: 220px
+                    flex-shrink: 0
+                    padding-bottom: 10px
+            &_items2
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 40px
+                gap: 478px
+            &_items2.for640
+                &_active
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 40px
+                    gap: 340px
+        .footer_line
+            width: 728px
+        .footer_line.for640
+            &_active
+                width: 95vw
+        .footer_second
+            display: flex
+            width: 728px
+            padding: 64px 20px
+            align-items: flex-end
+            gap: 130px
+        .footer_second.for640
+            &_active
+                display: flex
+                width: 640px
+                padding: 64px 20px
+                align-items: flex-end
+                gap: 85px
